@@ -44,3 +44,14 @@ __________________________________________________________________
        - Stable
    - Con
        - None
+__________________________________________________________________
+# Running WordPress with MAMP
+1) Download MAMP & MAMP PRO -> https://www.mamp.info/en/downloads/
+2) Install MAMP with all default settings.
+3) Save "Document Root" folder path -> on the References from the top menu
+4) Open "Document Root" folder "htdocs" and create new folder inside of "htdocs" with name for eg: "coolsite"
+5) Download WordPress -> https://wordpress.org/download/
+6) Unzip WordPress.zip file and copy all files from wordpress folder (wp-admin, wp-content, eg.) to created folder in step #4
+7) Find and remember "Apache Port"  -> Open MAMP -> Preferences  for eg("80")
+8) Open MAMP -> Start Servers
+9) Open Web Browser and go to following url:  localhost:<Apache Port>/<Created folder in step #4    On my side it looks like this: "localhost:80/coolsite"
