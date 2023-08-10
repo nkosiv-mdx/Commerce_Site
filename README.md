@@ -18,20 +18,29 @@ __________________________________________________________________
 # Options to run WordPress
 1) AMPPS - https://ampps.com/
    - Pro
-       - Very easy
+       - Easy to use
        - Many functionalities
-       - Fast to get going
+       - Fewer steps to setup
    - Con
-       - Not working in MacOs Big Sur
-2) docker - https://docker.com/
+       - Not working on Latest Mac OS
+       - May be not developed anymore
+2) Docker - https://docker.com/
    - Pro
        - Very stable
-       - Fast to get going
+       - Fewer steps to setup
    - Con
        - Docker knowledge
 3) LOCAL - https://localwp.com/
    - Pro
-       - Very easy
-       - Only for WordPress
+       - Easy to use
+       - Specifically for WordPress
    - Con
-       - Issue to connectiong to site from within Docker container
+       - Behave differently for Windows and Mac
+       - Extra step to connect to db with port
+       - Extra step to access from a Docker
+4) MAMP - https://mamp.info/
+   - Pro
+       - Easy to use
+       - Stable
+   - Con
+       - None
