@@ -55,3 +55,26 @@ __________________________________________________________________
 7) Find and remember "Apache Port"  -> Open MAMP -> Preferences  for eg("80")
 8) Open MAMP -> Start Servers
 9) Open Web Browser and go to following url:  localhost:<Apache Port>/<Created folder in step #4    On my side it looks like this: "localhost:80/coolsite"
+
+# WordPress Installation Page
+1) Select your language (eg. English)
+2) Click "Lets go" on the next page
+3) Find and remember "MySQL Port"  -> Open MAMP -> Preferences  for eg("80")
+4) Download and Install MySQL Workbench  -> https://dev.mysql.com/downloads/workbench/
+5) Open MySQL Workbench and Setup New Connection by clicking "+" button
+6) Input some name in Connection Name field "MAMP"
+7) Input port which we found in step #3
+8) Click on "Test Connection" button and if ask password, than input "root" value
+9) Click "OK" if successfull msg, and click "OK" again
+10) Click on "MAMP" db and add new schema with same name which we specified in step #4 from previos paragraph "coolsite", click Apply, click Finish/Close
+11) Go back to browser and Input Database Name which we specified in step #10 eg. "coolsite"
+12) Input "root" in Username and Password fields
+13) Click "Submit" button
+14) Click "Run the installation" button
+15) Specify Site Title -> for eg. "Cool Site" or smthing else
+16) Specify username -> for eg. "admin"
+17) Specify password -> for eg. "admin123"
+18) Click "Confirm weak password" checkbox if it is present
+19) Specify your email in email field
+20) Click "Search engine visibility" checkbox and click "Install WordPress" button
+21) Try to Login with user from step #16 and password from step #17
