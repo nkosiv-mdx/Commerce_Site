@@ -89,3 +89,12 @@ __________________________________________________________________
 8) Scroll to the buttom and click "Install" button
 9) Click on "Administrative URL"
 __________________________________________________________________
+# Running WordPress with Local
+1) Download and install with all default settings [Local](https://localwp.com/releases/)
+2) Click on "Create a new Site" button and click "Continue"
+3) Input Site Name -> for eg. "Cool Site" or smthing else -> and click "Continue"
+4) Select "Preferred" and click "Continue"
+5) Specify "WordPress Username" -> for eg. "admin"
+7) Specify "WordPress Password" -> for eg. "admin123"
+8) Click "Add Site" button
+9) Click "WP Admin" button
