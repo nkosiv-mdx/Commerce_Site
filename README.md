@@ -98,3 +98,12 @@ __________________________________________________________________
 7) Specify "WordPress Password" -> for eg. "admin123"
 8) Click "Add Site" button
 9) Click "WP Admin" button
+__________________________________________________________________
+# Running WordPress with Docker
+1) Download and install with all default settings [Docker](https://www.docker.com/)
+2) Login to [Docket Hub](https://hub.docker.com/)
+3) Find [WordPress](https://hub.docker.com/_/wordpress) image
+4) Find [MySQL](https://hub.docker.com/_/mysql) image
+5) Find [phpmyadmin](https://hub.docker.com/_/phpmyadmin) image
+6) Check [Example for WordPress docker-compose.yml file](https://hub.docker.com/_/wordpress#:~:text=Example%20docker%2Dcompose.yml)
+7) Create empty folder for eg (wordpress_site)
