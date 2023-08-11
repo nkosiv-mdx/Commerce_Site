@@ -107,3 +107,63 @@ __________________________________________________________________
 5) Find [phpmyadmin](https://hub.docker.com/_/phpmyadmin) image
 6) Check [Example for WordPress docker-compose.yml file](https://hub.docker.com/_/wordpress#:~:text=Example%20docker%2Dcompose.yml)
 7) Create empty folder for eg (wordpress_site)
+8) Create "docker-compose.yaml" and add the code below to that file
+ Wordpress & Docker
+```
+version: '3.1'
+
+services:
+  # Database
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin123
+    networks:
+      - wpsite
+  # phpmyadmin
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root 
+    networks:
+      - wpsite
+  # Wordpress
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - '8000:80'
+    restart: always
+    volumes: ['./:/var/www/html']
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin123
+    networks:
+      - wpsite
+networks:
+  wpsite:
+volumes:
+  db_data:
+```
+9) Run the command
+
+```
+$ docker-compose up -d
+
+# To Tear Down
+$ docker-compose down --volumes
+```
