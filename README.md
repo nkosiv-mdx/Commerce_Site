@@ -159,6 +159,7 @@ networks:
 volumes:
   db_data:
 ```
+9) Start Docker Desktop application
 9) Run the command
 
 ```
