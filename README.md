@@ -133,7 +133,7 @@ services:
     image: phpmyadmin/phpmyadmin
     restart: always
     ports:
-      - '8080:80'
+      - '8081:80'
     environment:
       PMA_HOST: db
       MYSQL_ROOT_PASSWORD: root 
@@ -145,7 +145,7 @@ services:
       - db
     image: wordpress:latest
     ports:
-      - '8000:80'
+      - '8001:80'
     restart: always
     volumes: ['./:/var/www/html']
     environment:
@@ -160,7 +160,7 @@ volumes:
   db_data:
 ```
 9) Start Docker Desktop application
-9) Run the command
+10) Run the command
 
 ```
 $ docker-compose up -d
@@ -168,3 +168,6 @@ $ docker-compose up -d
 # To Tear Down
 $ docker-compose down --volumes
 ```
+11) Open Web Browser and go to following url:  localhost:8001   -WordPress
+12) Open Web Browser and go to following url:  localhost:8081   -PHPMyAdmin
+
