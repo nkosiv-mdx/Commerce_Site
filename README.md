@@ -24,6 +24,7 @@ __________________________________________________________________
    - Con
        - Not working on Latest Mac OS
        - May be not developed anymore
+       - Is not free anymore
 2) [Docker](https://docker.com/)
    - Pro
        - Very stable
