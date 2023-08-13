@@ -170,4 +170,21 @@ $ docker-compose down --volumes
 ```
 11) Open Web Browser and go to following url:  localhost:8001   -WordPress
 12) Open Web Browser and go to following url:  localhost:8081   -PHPMyAdmin
-
+__________________________________________________________________
+# WordPress Installation Page
+1) Select your language (eg. English)
+2) Specify Site Title -> for eg. "Cool Site" or smthing else
+3) Specify username -> for eg. "admin"
+4) Specify password -> for eg. "admin123"
+5) Click "Confirm weak password" checkbox if it is present
+6) Specify your email in email field
+7) Click "Search engine visibility" checkbox and click "Install WordPress" button
+8) Try to Login with user from step #16 and password from step #17
+__________________________________________________________________
+# Install Theme
+1) Click Appearence -> Theme from left side panel
+2) Click on "Add New" button
+3) Search using "storefront" value
+4) Hove mouse on first theme "storefront" and click "install" button
+5) When theme is installed. Click "Activate" button
+6) Hover mouse on "Home" icon and click "Visit Site" from displayed menu
